@@ -1,0 +1,89 @@
+/* miniprogram/pages/index/index.wxss */
+page {
+  background: #f6f6f6;
+}
+.index .header{
+  background: #ffffff;
+  padding: 40rpx 40rpx;
+}
+.index .header .input{
+  display: flex;
+  align-items: center;
+  background: #f6f6f6;
+  margin: 0 auto;
+  padding:0 20rpx;
+  font-size: 12px;
+  height: 60rpx;
+  line-height: 60rpx;
+  color: #999;
+  border-radius: 30rpx;
+}
+.index .header .input .search-icon{
+  width: 40rpx;
+  height: 40rpx;
+  margin: 0 10px;
+}
+.index .tabs{
+  display: flex;
+  padding: 20rpx 40rpx;
+}
+.index .tabs .tab{
+  font-size: 14px;
+  margin-right: 20rpx;
+}
+
+.index .list{
+  padding: 0 40rpx;
+}
+.index .list .card{
+  border-radius: 8rpx;
+  background: #ffffff;
+}
+
+.index .list .card .bus-station{
+  display: flex;
+  align-items: center;
+  padding: 0 10rpx;
+}
+
+.index .list .card .bus-station .detail{
+  flex: 1;
+}
+
+.index .list .card .bus-station .name{
+  font-size: 14px;
+  font-weight: bold;
+}
+.index .list .card .bus-station .distance{
+  font-size: 12px;
+}
+.index .list .card .bus-icon{
+  width: 60rpx;
+  height: 60rpx;
+  margin: 10rpx;
+}
+
+.index .list .card .star-icon{
+  width: 40rpx;
+  height: 40rpx;
+}
+
+
+.index .list .card .bus{
+  display: flex;
+  align-items: center;
+  border-top: 1px solid #eee;
+}
+
+.index .list .card .bus .bus-item{
+  display: flex;
+  align-items: center;
+  font-size: 10px;
+  border: 1px solid #999;
+  border-radius: 10rpx;
+}
+
+.index .list .card .bus .bus-item .bus-small-icon{
+  width: 30rpx;
+  height: 30rpx;
+}
