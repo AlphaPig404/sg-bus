@@ -1,1 +1,54 @@
-/* miniprogram/pages/me/me.wxss */
+page {
+  background: #f6f6f6;
+  color: #1f4e5f;
+}
+page .me .header {
+  background: #ffffff;
+  padding: 20rpx;
+}
+page .me .header .title {
+  font-size: 28px;
+}
+page .me .header .user {
+  width: 400rpx;
+  margin: 0 auto;
+  text-align: center;
+}
+page .me .header .user .avatar {
+  width: 160rpx;
+  height: 160rpx;
+  border-radius: 50%;
+}
+page .me .content {
+  padding: 40rpx;
+}
+page .me .content .card {
+  background: #ffffff;
+  font-size: 14px;
+  border-radius: 8rpx;
+  border: 1rpx solid #eee;
+  margin-bottom: 20rpx;
+}
+page .me .content .card .card-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20rpx;
+  border-top: 1rpx solid #eee;
+}
+page .me .content .card .card-item:first-child {
+  border: 0;
+}
+page .me .content .card .card-item .card-item-detail {
+  display: flex;
+  align-items: center;
+}
+page .me .content .card .card-item .card-item-detail .card-item-icon {
+  width: 30rpx;
+  height: 30rpx;
+  margin-right: 10rpx;
+}
+page .me .content .card .card-item .card-item-more {
+  width: 30rpx;
+  height: 30rpx;
+}

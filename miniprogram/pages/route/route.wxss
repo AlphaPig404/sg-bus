@@ -1,1 +1,66 @@
-/* miniprogram/pages/route/route.wxss */
+page {
+  background: #f6f6f6;
+  color: #1f4e5f;
+}
+page .route .header {
+  background: #ffffff;
+  padding: 10rpx 40rpx;
+}
+page .route .header .title {
+  font-size: 28px;
+}
+page .route .header .form {
+  position: relative;
+  background: #f6f6f6;
+  border-radius: 8rpx;
+  margin: 10rpx 0;
+}
+page .route .header .form .input {
+  display: flex;
+  align-items: center;
+  padding: 20rpx;
+}
+page .route .header .form .input.start {
+  border-bottom: 1rpx solid #ffffff;
+}
+page .route .header .form .input.start .input-icon {
+  background: green;
+}
+page .route .header .form .input .input-icon {
+  width: 10rpx;
+  height: 10rpx;
+  background: red;
+  border-radius: 50%;
+  margin: 0 10rpx;
+}
+page .route .header .form .input .input-text {
+  font-size: 14px;
+}
+page .route .header .form .switch {
+  position: absolute;
+  right: 30rpx;
+  top: 50%;
+  margin-top: -28rpx;
+  width: 40rpx;
+  height: 40rpx;
+  border-radius: 50%;
+  background: #ffffff;
+  padding: 10rpx;
+}
+page .route .header .form .switch .switch-icon {
+  width: 40rpx;
+  height: 40rpx;
+}
+page .route .content .title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20rpx 40rpx;
+}
+page .route .content .title .title-text {
+  font-size: 14px;
+}
+page .route .content .title .title-icon {
+  width: 30rpx;
+  height: 30rpx;
+}

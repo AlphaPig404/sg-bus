@@ -1,0 +1,138 @@
+page{
+  background: #f6f6f6;
+  color: #1f4e5f;
+  .bus{
+    position: relative;
+    .bus-detail{
+      margin: 20rpx;
+      background: #ffffff;
+      border-radius: 8rpx;
+      border: 1rpx solid #eee;
+      padding: 10rpx;
+      .bus-detail-header{
+        display: flex;
+        justify-content: space-between;
+        font-size: 14px;
+        padding: 20rpx;
+        .bus-detail-header-route{
+
+        }
+        .bus-detail-header-time{
+          
+        }
+      }
+      .bus-detail-content{
+        display: flex;
+        font-size: 12px;
+        padding: 10rpx 0;
+        .bus-detail-item{
+          flex: 1;
+          text-align: center;
+          .bus-detail-item-top{
+            .bus-detail-item-top-num{
+              position: relative;
+              font-size: 24px;
+              display: inline-block;
+              .bus-detail-item-top-num-icon{
+                position: absolute;
+                width: 10rpx;
+                height: 10rpx;
+                left: -10rpx;
+                top: 0;
+              }
+            }
+            .bus-detail-more-icon{
+              width: 60rpx;
+              height: 60rpx;
+            }
+          }
+        }
+      }
+    }
+    .bus-routes-wrapper-wrapper{
+      width: 100%;
+      height: 200rpx;
+      overflow-y: hidden;
+    }
+    .bus-routes-wrapper{
+      width: 100%;
+      overflow: auto;
+      -webkit-overflow-scrolling: touch;
+      padding-bottom: 100rpx;
+      box-sizing: border-box;
+      .bus-routes{
+        position: relative;
+        white-space: nowrap;
+        margin-top: 100rpx;
+        padding: 0 20rpx;
+        display: inline-block;
+        .bus-route-item{
+          width: 200rpx;
+          text-align: center;
+          display: inline-block;
+          .bus-route-item-line{
+            width: 100%;
+            height: 20rpx;
+            background: orange;
+            text-align: center;
+            position: relative;
+            .bus-route-item-line-arrow{
+              position: absolute;
+              width: 20rpx;
+              height: 20rpx;
+              left: 50%;
+              top: 50%;
+              margin-top: -10rpx;
+              margin-left: -10rpx;
+            }
+            .bus-route-item-line-station{
+              position: absolute;
+              width: 40rpx;
+              height: 40rpx;
+              left: 50%;
+              top: 50%;
+              margin-top: -30rpx;
+              margin-left: -20rpx;
+            }
+          }
+          .bus-route-item-index{
+            font-size: 12px;
+          }
+          .bus-route-item-name{
+            font-size: 14px;
+          }
+        }
+        .bus-icon{
+          position: absolute;
+          top: -60rpx;
+          image{
+            width: 40rpx;
+            height: 40rpx;
+          }
+        }
+      }
+    }
+    
+    .bus-buttons{
+      position: fixed;
+      display: flex;
+      background: #ffffff;
+      width: calc(~"100% - 60rpx");
+      border-radius: 8rpx;
+      padding: 10rpx;
+      left: 20rpx;
+      bottom: 40rpx;
+      .bus-button-item{
+        flex: 1;
+        text-align: center;
+        .bus-button-item-icon{
+          width: 40rpx;
+          height: 40rpx;
+        }
+        .bus-button-item-text{
+          font-size: 14px;
+        }
+      }
+    }
+  }
+}

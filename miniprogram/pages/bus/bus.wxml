@@ -1,0 +1,106 @@
+<view class="bus">
+  <view class="bus-detail">
+    <view class="bus-detail-header">
+      <view class="bus-detail-header-route">广州塔西 -> 广州塔西</view>
+      <view class="bus-detail-header-time">首09:00 末20:00</view>
+    </view>
+    <view class="bus-detail-content">
+        <view class="bus-detail-first bus-detail-item">
+          <view class="bus-detail-item-top">
+              <view class="bus-detail-item-top-num">30
+                  <image class="bus-detail-item-top-num-icon" src="../../images/minute.png"></image>
+              </view>分
+          </view>
+          <view class="bus-detail-item-desc">
+            即将到站/602m
+          </view>
+        </view>
+        <view class="bus-detail-second bus-detail-item">
+          <view class="bus-detail-item-top">
+            <view class="bus-detail-item-top-num">30
+                <image class="bus-detail-item-top-num-icon" src="../../images/minute.png"></image>
+            </view>分
+          </view>
+          <view class="bus-detail-item-desc">
+            1站/4.8km
+          </view>
+        </view>
+        <view class="bus-detail-more bus-detail-item">
+          <view class="bus-detail-item-top">
+            <image class="bus-detail-more-icon" src="../../images/more_info.png"></image>
+          </view>
+          <view class="bus-detail-item-desc">更多车辆</view>
+        </view>
+    </view>
+  </view>
+  <view class="bus-routes-wrapper-wrapper"> 
+  <view class="bus-routes-wrapper">  
+  <view class="bus-routes">
+    <view class="bus-icon">
+      <image src="../../images/bus_mini.png"></image>
+    </view>
+    <view class="bus-route-item">
+      <view class="bus-route-item-line">
+        <image class="bus-route-item-line-arrow" src="../../images/arrow.png" mode="aspectFit"></image>
+      </view>
+      <view class="bus-route-item-index">1</view>
+      <view class="bus-route-item-name">Haw par</view>
+    </view>
+    <view class="bus-route-item">
+        <view class="bus-route-item-line">
+          <image class="bus-route-item-line-arrow" src="../../images/arrow.png" mode="aspectFit"></image>
+        </view>
+        <view class="bus-route-item-index">1</view>
+        <view class="bus-route-item-name">Haw par</view>
+      </view>
+      <view class="bus-route-item">
+          <view class="bus-route-item-line">
+            <image class="bus-route-item-line-station" src="../../images/station.png" mode="aspectFit"></image>
+          </view>
+          <view class="bus-route-item-index">1</view>
+          <view class="bus-route-item-name">Haw par</view>
+        </view>
+        <view class="bus-route-item">
+            <view class="bus-route-item-line">
+              <image class="bus-route-item-line-arrow" src="../../images/arrow.png" mode="aspectFit"></image>
+            </view>
+            <view class="bus-route-item-index">1</view>
+            <view class="bus-route-item-name">Haw par</view>
+          </view>
+          <view class="bus-route-item">
+              <view class="bus-route-item-line">
+                <image class="bus-route-item-line-arrow" src="../../images/arrow.png" mode="aspectFit"></image>
+              </view>
+              <view class="bus-route-item-index">1</view>
+              <view class="bus-route-item-name">Haw par</view>
+            </view>
+            <view class="bus-route-item">
+                <view class="bus-route-item-line">
+                  <image class="bus-route-item-line-arrow" src="../../images/arrow.png" mode="aspectFit"></image>
+                </view>
+                <view class="bus-route-item-index">1</view>
+                <view class="bus-route-item-name">Haw par</view>
+              </view>
+    
+  </view>
+  </view>
+</view>
+  <view class="bus-buttons">
+    <view class="bus-button-item">
+      <image class="bus-button-item-icon" src="../../images/detail.png"></image>
+      <view class="bus-button-item-text">详情</view>
+    </view>
+    <view class="bus-button-item">
+      <image class="bus-button-item-icon" src="../../images/refresh.png"></image>
+      <view class="bus-button-item-text">刷新</view>
+    </view>
+    <view class="bus-button-item">
+      <image class="bus-button-item-icon" src="../../images/reverse.png"></image>
+      <view class="bus-button-item-text">换向</view>
+    </view>
+    <view class="bus-button-item">
+      <image class="bus-button-item-icon" src="../../images/collection.png"></image>
+      <view class="bus-button-item-text">收藏</view>
+    </view>
+  </view>
+</view>

@@ -1,2 +1,25 @@
 <!--miniprogram/pages/route/route.wxml-->
-<text>miniprogram/pages/route/route.wxml</text>
+<view class="route">
+  <view class="header">
+    <view class="title">路线</view>
+    <view class="form">
+      <view class="start input">
+        <view class="input-icon"></view>
+        <text class="input-text">我的位置</text>
+      </view>
+      <view class="end input">
+        <view class="input-icon"></view>
+        <text class="input-text">你要去哪儿？</text>  
+      </view>
+      <view class="switch">
+        <image class="switch-icon" src="../../images/switch.png" />
+      </view>
+    </view>
+  </view>
+  <view class="content">
+    <view class="title">
+      <text class="title-text">搜索历史</text>
+      <image class="title-icon" src="../../images/clear.png"></image>
+    </view>
+  </view>
+</view>

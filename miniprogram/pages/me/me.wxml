@@ -1,2 +1,37 @@
 <!--miniprogram/pages/me/me.wxml-->
-<text>miniprogram/pages/me/me.wxml</text>
+<view class="me">
+  <view class="header">
+    <view class="title">我的</view>
+    <view class="user">
+      <image src="../../images/avatar.jpg" class="avatar" />
+      <view class="name">Lily_苏</view>
+    </view>
+  </view>
+  <view class="content">
+    <view class="card">
+      <view class="card-item">
+        <view class="card-item-detail">
+          <image class="card-item-icon" src="../../images/about.png"></image>
+          <view class="card-item-name">关于作者</view>
+        </view>
+        <image class="card-item-more" src="../../images/more.png"></image>
+      </view>
+      <view class="card-item">
+        <view class="card-item-detail">
+          <image class="card-item-icon" src="../../images/about.png"></image>
+          <view class="card-item-name">关于作者</view>
+        </view>
+        <image class="card-item-more" src="../../images/more.png"></image>
+      </view>
+    </view>
+    <view class="card">
+      <view class="card-item">
+        <view class="card-item-detail">
+          <image class="card-item-icon" src="../../images/about.png"></image>
+          <view class="card-item-name">关于作者</view>
+        </view>
+        <image class="card-item-more" src="../../images/more.png"></image>
+      </view>
+    </view>
+  </view>
+</view>

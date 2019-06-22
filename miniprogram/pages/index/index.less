@@ -1,0 +1,101 @@
+/* miniprogram/pages/index/index.wxss */
+page {
+  background: #f6f6f6;
+  color: #1f4e5f;
+  .index{
+    .header{
+      background: #ffffff;
+      padding: 1px 40rpx 40rpx;
+      .title{
+        font-size: 28px;
+        margin: 20rpx 0;
+      }
+      .input{
+        display: flex;
+        align-items: center;
+        background: #f6f6f6;
+        margin: 0 auto;
+        padding:0 20rpx;
+        font-size: 12px;
+        height: 60rpx;
+        line-height: 60rpx;
+        color: #999;
+        border-radius: 30rpx;
+        .search-icon{
+          width: 40rpx;
+          height: 40rpx;
+          margin: 0 10px;
+        }
+      }
+    }
+    .tabs{
+      display: flex;
+      padding: 20rpx 40rpx;
+      .tab{
+        font-size: 14px;
+        margin-right: 20rpx;
+      }
+    }
+    .list{
+      padding: 0 40rpx;
+      .card{
+        border-radius: 8rpx;
+        background: #ffffff;
+        border: 1rpx solid #eee;
+        margin-bottom: 20rpx;
+        .bus-station{
+          display: flex;
+          align-items: center;
+          padding: 10rpx;
+          .detail{
+            flex: 1;
+          }
+          .name{
+            font-size: 16px;
+            font-weight: bold;
+          }
+          .distance{
+            font-size: 12px;
+          }
+        }
+        .bus-icon{
+          width: 60rpx;
+          height: 60rpx;
+          margin: 10rpx;
+        }
+        .star-icon{
+          width: 40rpx;
+          height: 40rpx;
+        }
+        .bus{
+          display: flex;
+          align-items: center;
+          border-top: 1rpx solid #eee;
+          height: 80rpx;
+          line-height: 80rpx;
+          padding: 0 10rpx;
+          .bus-item{
+            display: flex;
+            align-items: center;
+            font-size: 14px;
+            font-weight: bold;
+            color: #999;
+            border: 1px solid #aaa;
+            border-radius: 10rpx;
+            height: 40rpx;
+            padding: 0 4rpx;
+            margin: 0 10rpx;
+            .bus-small-icon{
+              width: 30rpx;
+              height: 30rpx;
+            }
+          }
+          .bus-destination{
+            color: #666;
+            font-size: 14px;
+          }
+        }
+      }
+    }
+  }
+}

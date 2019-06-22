@@ -1,6 +1,7 @@
 <!--miniprogram/pages/index/index.wxml-->
 <view class="index">
   <view class="header">
+    <view class="title">新加坡</view>
     <view class="input">
       <image class="search-icon" src="../../images/search.png"></image>
       <text>搜索地点、车站、公交路线</text>
@@ -26,9 +27,39 @@
           <image class="bus-small-icon" src="../../images/bus_small.png"></image>
           <view class="bus-num">92A</view>
         </view>
-        <view>to xxx</view>
+        <view class="bus-destination">to Kent Ridge Ter</view>
       </view>
-      <view class="bus"></view>
+      <view class="bus">
+        <view class="bus-item">
+          <image class="bus-small-icon" src="../../images/bus_small.png"></image>
+          <view class="bus-num">30</view>
+        </view>
+        <view class="bus-destination">to Bon Lay Int</view>
+      </view>
+    </view>
+    <view class="card">
+      <view class="bus-station">
+        <image class="bus-icon" src="../../images/bus.png"></image>
+        <view class="detail">
+          <view class="name">opp dso</view>
+          <view class="distance">2 min walk</view>
+        </view>
+        <image class="star-icon" src="../../images/star.png"></image>
+      </view>
+      <view class="bus">
+        <view class="bus-item">
+          <image class="bus-small-icon" src="../../images/bus_small.png"></image>
+          <view class="bus-num">92A</view>
+        </view>
+        <view class="bus-destination">to Kent Ridge Ter</view>
+      </view>
+      <view class="bus">
+        <view class="bus-item">
+          <image class="bus-small-icon" src="../../images/bus_small.png"></image>
+          <view class="bus-num">30</view>
+        </view>
+        <view class="bus-destination">to Bon Lay Int</view>
+      </view>
     </view>
   </view>
 </view>
