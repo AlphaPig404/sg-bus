@@ -1,18 +1,28 @@
 // miniprogram/pages/index/index.js
+var QQMapWX = require('../../libs/qqmap-wx-jssdk.min.js');
+var qqmapsdk;
 Page({
 
   /**
    * Page initial data
    */
   data: {
-
+    location: {
+      street: '定位中...',
+      latitude: '',
+      longitude: ''
+    },
+    nearbyBusStopList: []
   },
 
   /**
    * Lifecycle function--Called when page load
    */
   onLoad: function (options) {
-
+    // 实例化API核心类
+    qqmapsdk = new QQMapWX({
+      key: 'ISYBZ-M3GW3-RTI3W-YRKSH-35UCK-QTBK4'
+    });
   },
 
   /**
@@ -26,7 +36,7 @@ Page({
    * Lifecycle function--Called when page show
    */
   onShow: function () {
-
+    this.getLocation()
   },
 
   /**
@@ -62,5 +72,61 @@ Page({
    */
   onShareAppMessage: function () {
 
-  }
+  },
+  getLocation(){
+    const self = this
+    wx.getLocation({
+      type: 'gcj02',
+      success (res) {
+        const latitude = res.latitude
+        const longitude = res.longitude
+        self.getNearbyStations(latitude, longitude)
+        qqmapsdk.reverseGeocoder({
+          location: {
+            latitude,
+            longitude
+          },
+          success: function (addressRes) {
+            console.log(addressRes)
+            if(addressRes.status === 0){
+              const street = addressRes.result.address_component.street
+              self.setData({
+                location:{
+                  street,
+                  latitude,
+                  longitude
+                }
+              })
+            }
+          }
+        })
+      }
+     })
+  },
+  getNearbyStations: function(latitude, longitude) {
+    // 调用云函数
+    console.dir({
+      latitude, 
+      longitude
+    })
+    wx.cloud.callFunction({
+      name: 'get-nearby-stations',
+      data: {
+        latitude, 
+        longitude
+      },
+      success: res => {
+        console.log('[云函数] getNearbyStations: ', res)
+        if(!res.result.status){
+          const nearbyBusStopList = res.result.results 
+          this.setData({
+            nearbyBusStopList: nearbyBusStopList
+          })
+        }
+      },
+      fail: err => {
+        console.error('[云函数] [login] 调用失败', err)
+      }
+    })
+  },
 })

@@ -5,7 +5,13 @@ Page({
    * Page initial data
    */
   data: {
-
+    listConfig:[
+      {
+        type: 'about',
+        icon: '../../images/about.png',
+        name: '关于作者'
+      }
+    ]
   },
 
   /**
@@ -62,5 +68,13 @@ Page({
    */
   onShareAppMessage: function () {
 
+  },
+  tapAuth(){
+    console.log('tap')
+    wx.openSetting({
+      success (res) {
+        console.log(res.authSetting)
+      }
+    })
   }
 })

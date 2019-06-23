@@ -9,10 +9,10 @@
   </view>
   <view class="content">
     <view class="card">
-      <view class="card-item">
+      <view class="card-item" bindtap="tapAuth">
         <view class="card-item-detail">
-          <image class="card-item-icon" src="../../images/about.png"></image>
-          <view class="card-item-name">关于作者</view>
+          <image class="card-item-icon" src="../../images/auth.png"></image>
+          <view class="card-item-name">授权管理</view>
         </view>
         <image class="card-item-more" src="../../images/more.png"></image>
       </view>
